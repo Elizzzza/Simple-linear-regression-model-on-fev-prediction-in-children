@@ -142,7 +142,7 @@ fev_mod2_resids %>% ggplot(aes(height, mod2_resids)) +
   ggtitle(label = "Residual plot of log FEV versus height (fitted model from Q4)")
 ```
 
-7.  Based on a simple linear regression, we estimate that the difference in the mean FEV between two populations of the same sex differing by one inch in height is 0.13 L/s, with the taller group having higher FEV values (95% CI based on heteroskedasticity-robust standard errors: 0.12, 0.14). The intercept is -5.27 L/s at zero inches in height for female children, which is an extrapolation from the range of the observed data, and it is not of scientific interest. 
+7.  Based on a simple linear regression, we estimate that the mean FEV for male children is 2.81 L/s. Furthermore, we estimate that the difference in the mean FEV of male group compared with female group is 0.36 L/s, with the male group having higher mean FEV. 
 
 ```{r Q7, include=F}
 ### -----------------------------------------------------------
@@ -150,12 +150,14 @@ fev_mod2_resids %>% ggplot(aes(height, mod2_resids)) +
 ### Here's a linear model with fev ~ height + female using rigr:regress
 fev_female <- fev %>% 
   mutate(female = ifelse(sex == "female", 1, 0))
-fev_mod4 <- regress("mean", fev ~ height + female, data = fev_female)
+fev_mod4 <- regress("mean", fev ~ female, data = fev_female)
 fev.female.ci <- fev_mod4 %>% coef %>% round(4)
 fev.female.ci
 ```
 
-8.  Based on a simple linear regression, we estimate that the difference in the mean FEV between two populations of the same sex differing by one inch in height is 0.13 L/s, with the taller group having higher FEV values (95% CI based on heteroskedasticity-robust standard errors: 0.12, 0.14). The intercept is -5.39 L/s at zero inches in height for male children, which is an extrapolation from the range of the observed data, and it is not of scientific interest. Comparing the fitted value under model from question 8 to that of question 7, we see the parameter beta 1 remains the same, but beta 0 is smaller (or larger in magnitude) in the fitted model of question 8. Therefore, we can conclude that a switch in the indication of sex between females and males does not change the conclusions of our analysis of the slope parameter, but would affect the conclusions of the intercept parameter.  
+8.  Based on a simple linear regression, we estimate that the mean FEV for female children is 2.45 L/second. Furthermore, we estimate that the difference in the mean FEV of female children compared with male children is 0.36 L/second, with the male group having higher mean FEV. 
+Comparing the fitted value under model from question 8 to that of question 7, we see the parameter beta 1 remains the same, but beta 0 is smaller (or larger in magnitude) in the fitted model of question 8. Therefore, we can conclude that a switch in the indication of sex between females and males does not change the conclusions of our analysis of the slope parameter, but would affect the conclusions of the intercept parameter.  
+
 
 ```{r Q8, include=F}
 ### -----------------------------------------------------------
@@ -163,7 +165,7 @@ fev.female.ci
 ### Here's a linear model with fev ~ height + male using rigr:regress
 fev_male <- fev %>% 
   mutate(male = ifelse(sex == "male", 1, 0))
-fev_mod5 <- regress("mean", fev ~ height + male, data = fev_male)
+fev_mod5 <- regress("mean", fev ~ male, data = fev_male)
 fev.male.ci <- fev_mod5 %>% coef %>% round(4)
 fev.male.ci
 ### -----------------------------------------------------------
