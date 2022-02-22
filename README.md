@@ -62,7 +62,7 @@ that you fit in Question 2.
 
 where femalei = 1 if participant i is female and femalei = 0 if participant i is male. Interpret the estimated parameters of your model.
 8. Now fit the following model for FEV:
-9.
+
 *E[FEVi|malei] = β0 + β1 ×malei*
 
 where malei = 1 if participant i is male and malei = 0 if participant i is female. Interpret the estimated parameters of your model. Compare the fitted values under this model to the fitted values from the model that you fit in Question 7, and comment.
