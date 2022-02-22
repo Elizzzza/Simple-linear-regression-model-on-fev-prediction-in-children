@@ -57,8 +57,12 @@ as follows:
 that you fit in Question 2.
 6. Obtain (or calculate) the residuals from the models that you fit in Questions 2 and 4, and make a plot for each model showing the residuals against the heights. Which model do you think would give a better prediction of the FEV of a 48 inch tall child? Justify your answer.
 7. Fit the following model for FEV:
+
 *E[FEVi|femalei] = β0 + β1 ×femalei*
+
 where femalei = 1 if participant i is female and femalei = 0 if participant i is male. Interpret the estimated parameters of your model.
 8. Now fit the following model for FEV:
+9.
 *E[FEVi|malei] = β0 + β1 ×malei*
+
 where malei = 1 if participant i is male and malei = 0 if participant i is female. Interpret the estimated parameters of your model. Compare the fitted values under this model to the fitted values from the model that you fit in Question 7, and comment.
