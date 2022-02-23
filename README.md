@@ -1,4 +1,5 @@
 # BIOST 515/518: Homework 2
+#### Instructor:  Amy Willis
 
 ## Instructions
 
@@ -40,13 +41,13 @@ Data from the study is available under “Datasets” as fev.csv. Available data
 age, height, sex, FEV, and whether each child smokes or not. Each row corresponds to a single clinic visit.
 Missing data is denoted by NA. The first line of the file contains the variable names. The variables are coded
 as follows:
-* seqnbr: case number (the numbers 1 to 654)
-* subjid: subject identification number (unique for each different child)
-* age: subject age at time of measurement (years)
-* fev: measured FEV (liters per second)
-* height: subject height at time of measurement (inches)
-* sex: subject sex (only “male” and “female” children participated in the study)
-* smoke: smoking habits (“smoker” or “nonsmoker”)
+* ***seqnbr***: case number (the numbers 1 to 654)
+* ***subjid***: subject identification number (unique for each different child)
+* ***age***: subject age at time of measurement (years)
+* ***fev***: measured FEV (liters per second)
+* ***height***: subject height at time of measurement (inches)
+* ***sex***: subject sex (only “male” and “female” children participated in the study)
+* ***smoke***: smoking habits (“smoker” or “nonsmoker”)
 
 ## Questions
 1. Make a scatterplot with FEV on the vertical axis and height on the horizontal axis. Describe the relationship that you see.
@@ -58,11 +59,11 @@ that you fit in Question 2.
 6. Obtain (or calculate) the residuals from the models that you fit in Questions 2 and 4, and make a plot for each model showing the residuals against the heights. Which model do you think would give a better prediction of the FEV of a 48 inch tall child? Justify your answer.
 7. Fit the following model for FEV:
 
-*E[FEVi|femalei] = β0 + β1 ×femalei*
+***E[FEVi|femalei] = β0 + β1 × femalei***
 
 where femalei = 1 if participant i is female and femalei = 0 if participant i is male. Interpret the estimated parameters of your model.
 8. Now fit the following model for FEV:
 
-*E[FEVi|malei] = β0 + β1 ×malei*
+***E[FEVi|malei] = β0 + β1 × malei***
 
 where malei = 1 if participant i is male and malei = 0 if participant i is female. Interpret the estimated parameters of your model. Compare the fitted values under this model to the fitted values from the model that you fit in Question 7, and comment.
