@@ -62,6 +62,7 @@ that you fit in Question 2.
 ***E[FEVi|femalei] = β0 + β1 × femalei***
 
 where femalei = 1 if participant i is female and femalei = 0 if participant i is male. Interpret the estimated parameters of your model.
+
 8. Now fit the following model for FEV:
 
 ***E[FEVi|malei] = β0 + β1 × malei***
