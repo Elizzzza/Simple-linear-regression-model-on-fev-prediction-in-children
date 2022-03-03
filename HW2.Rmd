@@ -1,7 +1,7 @@
 ---
 title: "BIOST 515 HW 2"
 author: "Eliza Chai"
-date: "01/19/2021"
+date: "01/19/2022"
 output:
   pdf_document
 ---
