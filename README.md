@@ -8,7 +8,7 @@ responses should have two sections:
 1. “Responses”, where you respond to the questions, using figures and tables where appropriate.
 2. “Code”, an appendix containing code used to run your analyses and support your responses.
 
-You are welcome to use the homework submission template (Files →Homeworks →submission-template.Rmd)
+You are welcome to use the homework submission template (Files → Homeworks → submission-template.Rmd)
 to prepare your responses, but this is not mandatory.
 
 Please note that credit will not be given for code and raw software output. Instead, you should use software
