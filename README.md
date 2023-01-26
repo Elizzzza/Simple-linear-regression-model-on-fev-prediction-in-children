@@ -41,7 +41,7 @@ that you fit in Question 2.
 
 ***E[FEVi|femalei] = β0 + β1 × femalei***
 
-***E</sub>[FEV|female<sub>i</sub>] = &beta;<sub>o</sub> + &beta;<sub>1</sub> &times; female<sub>i***
+**E</sub>[FEV<sub>i</sub>|female<sub>i</sub>] = &beta;<sub>o</sub> + &beta;<sub>1</sub> &times; female<sub>i**
 
 where femalei = 1 if participant i is female and femalei = 0 if participant i is male. Interpret the estimated parameters of your model.
 
@@ -49,7 +49,7 @@ where femalei = 1 if participant i is female and femalei = 0 if participant i is
 
 ***E[FEVi|malei] = β0 + β1 × malei***
 
-***E</sub>[FEV|male<sub>i</sub>] = &beta;<sub>o</sub> + &beta;<sub>1</sub> &times; male<sub>i***
+**E</sub>[FEV<sub>i</sub>|male<sub>i</sub>] = &beta;<sub>o</sub> + &beta;<sub>1</sub> &times; male<sub>i**
   
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
