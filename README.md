@@ -47,7 +47,7 @@ where femalei = 1 if participant i is female and femalei = 0 if participant i is
 
 ***E[FEVi|malei] = β0 + β1 × malei***
 
-E</sub>(FEV|male) = &beta;<sub>o + &beta;<sub>1;</sub>male
+E</sub>(FEV|male) = &beta;<sub>(o) + &beta;<sub>1</sub>(male)
   
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
