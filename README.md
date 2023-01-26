@@ -47,4 +47,6 @@ where femalei = 1 if participant i is female and femalei = 0 if participant i is
 
 ***E[FEVi|malei] = β0 + β1 × malei***
 
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+
 where malei = 1 if participant i is male and malei = 0 if participant i is female. Interpret the estimated parameters of your model. Compare the fitted values under this model to the fitted values from the model that you fit in Question 7, and comment.
