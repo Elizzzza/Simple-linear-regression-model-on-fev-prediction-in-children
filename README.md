@@ -1,28 +1,7 @@
-# BIOST 515/518: Homework 2
+# Apply simple linear regression model on FEV prediction in children with FEV dataset
+
+#### BIOST 515/518 Assignment 2
 #### Instructor:  Amy Willis
-
-## Instructions
-
-Submit your responses to the below questions as a single pdf file to Canvas. As in Homework 1, your
-responses should have two sections:
-1. “Responses”, where you respond to the questions, using figures and tables where appropriate.
-2. “Code”, an appendix containing code used to run your analyses and support your responses.
-
-You are welcome to use the homework submission template (Files → Homeworks → submission-template.Rmd)
-to prepare your responses, but this is not mandatory.
-
-Please note that credit will not be given for code and raw software output. Instead, you should use software
-to run analyses and prepare tables, figures, and/or other summaries of results as appropriate.
-
-Please thoughtfully organize your homework and answer in full sentences using professional, scientific writing.
-Tables and numeric information should be appropriate for inclusion in a scientific report, with appropriate
-rounding, and figures should be polished (e.g., with axes labelled and legends included). Please review the
-Homework 1 Solutions for both content and style.
-
-A key purpose of this homework (and all homeworks) is to work on Learning Goal #4: Prac-
-tice explaining our models and their interpretations to both statistical and non-statistical au-
-diences, so please use this opportunity to practice communicating clearly and justifying your
-scientific and statistical work.
 
 ## Scientific Background
 It is now widely believed that smoking tends to impair lung function. Much of the data to support this arises
@@ -37,6 +16,7 @@ respiratory function. It is well known that prolonged smoking diminishes FEV in 
 with diminished FEV also tend to have decreased pulmonary function as measured by other clinical variables,
 such as blood oxygen and carbon dioxide levels.
 
+## Dataset
 Data from the study is available under “Datasets” as fev.csv. Available data includes measurement of
 age, height, sex, FEV, and whether each child smokes or not. Each row corresponds to a single clinic visit.
 Missing data is denoted by NA. The first line of the file contains the variable names. The variables are coded
